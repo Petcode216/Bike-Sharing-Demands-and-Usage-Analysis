@@ -1,0 +1,12 @@
+term,vif
+C(weather_group)[T.Mist / cloudy],1.6545064553961915
+C(weather_group)[T.Rain / snow],1.387176883357104
+C(season_label)[T.Spring],2.7699822607855134
+C(season_label)[T.Summer],4.758495056891531
+C(season_label)[T.Fall],2.0611929031821625
+C(year)[T.2012],1.0483347855327505
+temp_ctr,3.532389774683045
+I(temp_ctr ** 2),1.517488901631152
+hum_pct,2.1279672144398623
+windspeed_kmh,1.2218401404845554
+workingday,1.0104107432310905

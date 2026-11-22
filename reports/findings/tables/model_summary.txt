@@ -1,0 +1,35 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    cnt   R-squared:                       0.849
+Model:                            OLS   Adj. R-squared:                  0.847
+Method:                 Least Squares   F-statistic:                     133.9
+Date:                Sat, 21 Nov 2026   Prob (F-statistic):          1.18e-165
+Time:                        14:44:15   Log-Likelihood:                -5869.2
+No. Observations:                 730   AIC:                         1.176e+04
+Df Residuals:                     718   BIC:                         1.182e+04
+Df Model:                          11                                         
+Covariance Type:                  HAC                                         
+=====================================================================================================
+                                        coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------
+Intercept                          5223.3970    301.854     17.304      0.000    4631.775    5815.019
+C(weather_group)[T.Mist / cloudy]  -396.7459     74.204     -5.347      0.000    -542.184    -251.308
+C(weather_group)[T.Rain / snow]   -1782.5551    249.115     -7.156      0.000   -2270.812   -1294.298
+C(season_label)[T.Spring]           869.1554    165.454      5.253      0.000     544.871    1193.440
+C(season_label)[T.Summer]          1066.2600    213.359      4.997      0.000     648.083    1484.436
+C(season_label)[T.Fall]            1203.0337    160.624      7.490      0.000     888.217    1517.850
+C(year)[T.2012]                    1931.8168     88.578     21.809      0.000    1758.207    2105.426
+temp_ctr                            111.8891     11.463      9.761      0.000      89.423     134.356
+I(temp_ctr ** 2)                     -7.8048      1.353     -5.767      0.000     -10.457      -5.152
+hum_pct                             -20.4920      2.966     -6.910      0.000     -26.305     -14.679
+windspeed_kmh                       -52.0966      6.687     -7.791      0.000     -65.202     -38.991
+workingday                          155.3273     71.762      2.164      0.030      14.677     295.978
+==============================================================================
+Omnibus:                       86.618   Durbin-Watson:                   1.175
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              223.230
+Skew:                          -0.624   Prob(JB):                     3.36e-49
+Kurtosis:                       5.405   Cond. No.                         949.
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 7 lags and without small sample correction
